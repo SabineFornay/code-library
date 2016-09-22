@@ -1,0 +1,27 @@
+#slider {
+    z-index: -10;
+    width:100%;
+    min-height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+/*container=100% de l'écran RELATIVE=permet l'adaptation de l'image selon l'écran*/
+
+#slider img{
+    position: absolute;
+    min-width: 100%;
+    
+    z-index: 1;
+    top:0;
+    -webkit-transition: .7s ease-in-out;
+    transition: .7s ease-in-out;
+}
+
+#slide2{
+    left: 100%;
+}
+
+#slide3{
+    left: 100%;
+}
