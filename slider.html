@@ -1,0 +1,48 @@
+<html>
+    
+<head>
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+        <script type="text/javascript">
+
+          var sens=1;
+          var i=0;
+          var imgslide = ['slide1', 'slide2', 'slide3'];
+          
+          var slide = setInterval(function(){
+
+            i=i+sens;
+
+            if(i==0)
+            {
+              sens=1;
+            }
+            if(i==3)
+            {
+              sens=-1;
+            }
+
+            if(sens==1)
+            {
+              document.getElementById(imgslide[i]).style.left= '0%';
+            }
+            else{
+              document.getElementById(imgslide[i]).style.left= '100%';
+            }
+
+          },5000);
+
+        </script>
+    </head>    
+    
+<body>
+<section id="slider">
+           <img src="slider/slide1.jpg" id="slide1">
+        <img src="slider/slide2.jpg" id="slide2">
+        <img src="slider/slide3.jpg" id="slide3">
+</section>
+    
+    </body>
+
+
+</html>
